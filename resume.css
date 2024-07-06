@@ -1,0 +1,44 @@
+h1 {
+    font-size: 3em;
+    color:#24527a;
+    text-align: center;
+    }
+
+img{
+    display:block;
+    margin: 0 auto;
+}
+
+.subtitle{
+    font-size: 2em;
+    color:#24527a;
+    text-align: center;
+}
+
+#tamu{
+    text-align: center;
+    font-size: 1.3em;
+}
+
+  fieldset{
+    display: block;
+    text-align: left;
+    width:60%;
+    margin: auto;
+    background-color: #F1F8E8;
+  }
+
+
+.contacts {
+    font-size: 1.3em;
+    text-align: center;
+    padding: 10px 20px; 
+    color: white; 
+    text-decoration: none; 
+    background-color:#24527a ; 
+    border-radius: 5px; 
+}   
+
+
+
+

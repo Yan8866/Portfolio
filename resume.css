@@ -9,15 +9,9 @@ img{
     margin: 0 auto;
 }
 
-.subtitle{
-    font-size: 2em;
-    color:#24527a;
-    text-align: center;
-}
 
-#tamu{
+.ed_contact{
     text-align: center;
-    font-size: 1.3em;
 }
 
   fieldset{
@@ -25,12 +19,13 @@ img{
     text-align: left;
     width:60%;
     margin: auto;
-    background-color: #F1F8E8;
+    background-color: #EEF7FF;
   }
 
 
-.contacts {
-    font-size: 1.3em;
+
+.button {
+    font-size: 1.2em;
     text-align: center;
     padding: 10px 20px; 
     color: white; 
@@ -39,6 +34,38 @@ img{
     border-radius: 5px; 
 }   
 
+#contacts, #education, #certification {
+    display: block;
+    text-align: left;
+    width:40%;
+    margin: auto;
+    background-color:#EEF7FF ;
+}
 
+#note{
+    font-size: 15px;
+    text-align: center;
+}
 
+.link{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #478CCF;
+}
 
+legend {
+    font-size: 1.5em;
+    color:#24527a;
+    font-weight: bold;
+    text-align: center;
+}
+
+.code {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    padding: 5px 8px; 
+    text-decoration: none; 
+    background-color:#24527a;
+    border-radius: 15px; 
+}

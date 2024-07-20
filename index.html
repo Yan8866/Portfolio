@@ -4,62 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume</title>
+    <link rel="stylesheet" href="./resume.css" /> 
 </head>
 <body>
     <h1> Yan Cheng </h1>
     <img src="./profile_pic.jpeg" alt="This is a picture of Yan Cheng" height="150" /> <br /> 
-    <h2> Education </h2>
-    <p> Texas A&M University, Master of Statistics, Jan 2021 - Aug 2022 </p>
-    
-    <h2> Certification </h2>
-    <ul>
-       <li> SAS Certified Base Programmer </li>
-       <li> Tableau Desktop Specialist Certification </li>
-    </ul>
+ 
+    <fieldset id = contacts>
+        <legend> Contacts </legend>
+        <p class="ed_contact"> Phone Number: 803-414-3160; Email: chengyan0627@gmail.com </p>
+    </fieldset>
 
-    <h2> Current Job </h2>
-    <ul>
-       <li> Use Microsoft SSIS to implement data ETL process. </li>
-       <li> Working with clients to collect data, clean data and transform data.  </li>
-       <li> Exploring data and verifying data accuracy with SQL in relational databases   </li>
-       <li> Cleaning, exploring, wrangling and blending data to prepare data for dashboards and analysis.   </li>
-       <li> Collaborates with SMEs and business users to create reports, dashboards in Tableau to provide real-time analytics and insights and drive more informed decisions  </li>
-       <li> Electronic Health and Medical Records Analysis </li>
-    </ul>
+    <fieldset id=education> 
+        <legend> Education</legend>
+        <p class="ed_contact"> Texas A&M University, Master of Statistics, Jan 2021 - Aug 2022 </p>
+        <p class="ed_contact"> Georgia Institute of Technology, Master of Computer Science, Jan 2024 - 2026 </p>
+    </fieldset> 
 
-    <h2> Projects </h2>
-    <h3> Lung Cancer Data Analysis (R) </h3>
-    <p> Compared four machine learning models and then selected the model with the best interpretability and prediction power- Logistic Regression to predict how likely a person will develop lung cancer with certain features.  </p>
-     
-    <h3> Volatility Analysis of the Returns of S&P500 (R) </h3>
-    <p> Built ARCH (1) and GARCH (1, 1) models to analyze the volatility of the returns of S&P500, and predicted the volatility of returns. </p>
+    <fieldset id=certification> 
+        <legend>Certification</legend>
+        <a class= link href="./SAS Certified Base Programmer for SAS 9 certificate.pdf" > 
+            SAS Certified Base Programmer 
+        </a> <br>
+        <a class= link  href = "./Tableau Desktop Specialist certificate.pdf"> 
+            Tableau Desktop Specialist Certification 
+        </a>
+    </fieldset> 
 
-    <h3> Insurance Fraud Detection (Python) </h3>
-    <p> Used packages pandas, numpy, seaborn, matplotlib, Plotly, missingno, Scikit-Learn and XGBoost to analyze an insurance data set with 1000 entries and 40 variables; trained nine classifiers: SVM, KNN, Decision Tree, Random Forest and so on.  </p>
+    <fieldset> 
+        <legend>Current Job</legend>
+        <div class="listcontainer">
+            <p>Data Scientist at Altera Digital Health, Nov 2022 - Present </p>
+            <ul class="listelement">
+                <li> Use Microsoft SSIS to implement data ETL process. </li>
+                <li> Working with clients to collect data, clean data and transform data.  </li>
+                <li> Exploring data and verifying data accuracy with SQL in relational databases   </li>
+                <li> Cleaning, exploring, wrangling and blending data to prepare data for dashboards and analysis.   </li>
+                <li> Collaborates with SMEs and business users to create reports, dashboards in Tableau to provide real-time analytics and insights and drive more informed decisions  </li>
+                <li> Electronic Health and Medical Records Analysis </li>
+            </ul>
+        </div>
+    </fieldset> 
 
-    <h2> Technical Skills </h2>
-    <ul> 
-        <li> Using version control system Git and its host GitHub </li>
-        <li> Familiar with big data tools like Hadoop and Spark  </li>
-        <li> Using Docker to share work and reproduce project results </li>
-        <li> Supervised & Unsupervised Learning: Logistic Regression, LDA, QDA, KNN, Bagging, Random Forest, Boosting, SVM, PCA and Clustering Analysis   </li>
-        <li> Experiment design and sampling methodologies  </li>
-        <li> Building predictive models using Frequency Method and Bayesian Method </li>
-        <li> Parametric, semiparametric and non-parametric techniques </li>
-        <li> Spatial data, time series data and categorical data visualization and analysis </li>
-    </ul>
+    <div id = note> <p> Note: Please click the projects to view more details. </p> </div>
+    <div style="text-align:center"> 
+        <a href="https://github.com/Yan8866/Resume.git" class="code"> View Code </a> 
+    </div>
+    <fieldset>  
+        <legend> Projects </legend>
+        <a class = link href = "./Trading Strategy Evaluation.pdf"> Trading Strategy Evaluation (Python) </a>
+        <p> Used packages pandas, numpy, seaborn, matplotlib, Plotly, missingno, Scikit-Learn and XGBoost to analyze an insurance data set with 1000 entries and 40 variables; trained nine classifiers: SVM, KNN, Decision Tree, Random Forest and so on.  </p>
 
-    <h2> Other Skills </h2>
-    <ul>
-        <li> Excellent written and spoken communication skills </li>
-        <li> Stakeholder management: planning, negotiation, problem solving, conflict resolution </li>
-    </ul>
+        <div> 
+            <a class = link href = "./Lung Cancer Data Analysis.pdf">  Lung Cancer Data Analysis (R)  </a>
+        </div> 
+        <p> Compared four machine learning models and then selected the model with the best interpretability and prediction power- Logistic Regression to predict how likely a person will develop lung cancer with certain features.  </p>
+        
+        <a class = link href = "./Analysis of Stock Market Indices.pdf"> 
+            Volatility Analysis of the Returns of S&P500 (R) 
+        </a>
+        <p> Built ARCH (1) and GARCH (1, 1) models to analyze the volatility of the returns of S&P500, and predicted the volatility of returns. </p>
+    </fieldset>
 
-    <hr />
-    <a href="./public/contact.html"> Contact Me </a> <br />
+    <fieldset> 
+        <legend> Technical Skills </legend>
+        <div class="listcontainer">
+            <ul class="listelement"> 
+                <li> Using version control system Git and its host GitHub </li>
+                <li> Familiar with big data tools like Hadoop and Spark  </li>
+                <li> Using Docker to share work and reproduce project results </li>
+                <li> Supervised & Unsupervised Learning: Logistic Regression, LDA, QDA, KNN, Bagging, Random Forest, Boosting, SVM, PCA and Clustering Analysis   </li>
+                <li> Experiment design and sampling methodologies  </li>
+                <li> Building predictive models using Frequency Method and Bayesian Method </li>
+                <li> Parametric, semiparametric and non-parametric techniques </li>
+                <li> Spatial data, time series data and categorical data visualization and analysis </li>
+            </ul>
+        </div>
+    </fieldset>
 
-    <footer>
-        <p>Yan Cheng @ 2024. All rights reserved. </p>
-      </footer>
+    <fieldset> 
+        <legend> Other Skills </legend>
+        <div class="listcontainer">
+            <ul class="listelement">
+                <li> Excellent written and spoken communication skills </li>
+                <li> Stakeholder management: planning, negotiation, problem solving, conflict resolution </li>
+            </ul>
+        </div>
+    </fieldset> 
+
+    <fieldset>
+        <legend> Programming Skills </legend>
+        <p> R, Python, SQL, SAS, HTML, CSS, PHP </p>
+    </fieldset> <br>
+
+    <div style="text-align:center"> 
+        <!-- <a href="./public/contact.html" class="button"> More Projects </a> <br /> -->
+        <footer>
+            <p>Yan Cheng @ 2024. All rights reserved. </p>
+        </footer>
+    </div> 
 </body>
 </html>

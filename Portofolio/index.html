@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./resume.css" /> 
+</head>
+<body>
+    <h1> Yan Cheng </h1>
+ 
+    <div id = note> <p> Note: Please click the projects to view more details. </p> </div>
+
+    <fieldset>  
+        <legend> Projects </legend>
+        <a class = link href = "./Trading_Strategy_Evaluation/Stock Trading Strategy Evaluation.pdf"> Trading Strategy Evaluation (Python) </a>
+        <p> This project evaluates stock trading strategies using three technical indicators: B%, PPO, and Stochastic Oscillator. Manual Strategy and Strategy Learner based on Random Forest classification are compared against a benchmark using in-sample and out-of-sample data. Results show that while both strategies outperform the benchmark in-sample, the Manual Strategy continues to perform well out-of-sample, whereas the Strategy Learner struggles with unseen data and is negatively impacted by trading costs.</p>
+
+        <div> 
+            <a class = link href = "./Churn_Diabetes_Prediction/Churn and Diabetes Prediction.pdf"> Churn and Diabetes Prediction using KNN, ANN and SVM (Python)   </a>
+        </div> 
+        <p> This project compares their performances and examines the impact of data dimensionality and size. Results show that ANN performs best overall with moderate computational cost, SVM is effective but computationally expensive, and KNN struggles due to the curse of dimensionality, challenging the assumption that larger datasets always lead to better model performance.  </p>
+
+        <div> 
+            <a class = link href = "./Dimension_Reduction_Clustering/Dimension Reduction And Clustering.pdf"> Dimension Reduction and Clustering (Python)  </a>
+        </div> 
+        <p> This project evaluates how PCA, ICA, RP, t-SNE and K-Means, GMM impact classification performance on churn and diabetes datasets. It also analyzes clustering quality, and tests whether reduced datasets or extracted cluster features improve ANN performance.   </p>
+        
+        <div> 
+            <a class = link href = "./Database And User Interface/"> Database And User Interface (SQL, PHP, HTML, CSS)  </a>
+        </div> 
+        <p> Design database schema with SQL, and build a user interface to generate reports using data stored in the database.  </p>
+
+        <div> 
+            <a class = link href = "./Convolutional Neural Network/"> Convolutional Neural Networks (Python)  </a>
+        </div> 
+        <p> Designed my own CNN for an image classification task. It achieved 91% accuracy on CIFAR data. </p>
+
+        <div> 
+            <a class = link href = "./Lung Cancer Prediction/Lung Cancer Data Analysis.pdf">  Lung Cancer Data Analysis (R)  </a>
+        </div> 
+        <p> Compared four machine learning models and then selected the model with the best interpretability and prediction power- Logistic Regression to predict how likely a person will develop lung cancer with certain features.  </p>
+        
+        <a class = link href = "./Analysis of Stock Market Indices/Analysis of Stock Market Indices.pdf"> 
+            Volatility Analysis of the Returns of S&P500 (R) 
+        </a>
+        <p> Built ARCH (1) and GARCH (1, 1) models to analyze the volatility of the returns of S&P500, and predicted the volatility of returns. </p>
+    </fieldset> <br>
+    <div style="text-align:center"> 
+        <a href="https://github.com/Yan8866/Portfolio.git" class="code"> View Code </a> 
+    </div><br>
+
+    <fieldset> 
+        <legend> Technical Skills </legend>
+        <div class="listcontainer">
+            <ul class="listelement"> 
+                <li> Using version control system Git and its host GitHub </li>
+                <li> Familiar with big data tools like Hadoop and Spark  </li>
+                <li> Using Docker to share work and reproduce project results </li>
+                <li> Experiment design and sampling methodologies  </li>
+                <li> Building predictive models using Frequency Method and Bayesian Method </li>
+                <li> Parametric, semiparametric and non-parametric techniques </li>
+                <li> Spatial data, time series data and categorical data visualization and analysis </li>
+            </ul>
+        </div>
+    </fieldset>
+
+    <div style="text-align:center"> 
+        <!-- <a href="./public/contact.html" class="button"> More Projects </a> <br /> -->
+        <footer>
+            <p>Yan Cheng @ 2025. All rights reserved. </p>
+        </footer>
+    </div> 
+</body>
+</html>

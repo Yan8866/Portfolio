@@ -66,7 +66,15 @@
             </video>
         </div>
         <p> I implemented a constant-velocity Kalman Filter that predicts and corrects object positions using noisy template-matching measurements, producing smoothed estimates of each target’s center. For multi-object tracking, I instantiated one independent Kalman Filter per person, each initialized at its own bounding-box center and updated separately using its own template and measurement stream. The tracking loop activates and deactivates filters based on each target’s start and end frame, allowing all trackers to run simultaneously and maintain stable position estimates even when measurements become noisy or intermittent. </p>
-   </fieldset>
+
+        <div style="text-align: center;">
+            <video width="500" controls>
+              <source src="./particle_tracking.mp4" type="video/mp4">
+            </video>
+        </div>
+        <p>  I implemented a particle filter that represents each object’s position using a cloud of weighted particles, which are predicted with Gaussian motion noise and then reweighted based on how well their local image patch matches the template. After normalizing weights, I resample particles to focus the distribution around high-likelihood regions and compute a weighted mean and spread to estimate and visualize the object’s position. Using this filter inside a multi-object tracking loop, each target is tracked independently by its own particle distribution, allowing robust tracking even under noise, partial occlusion, and rapid motion. </p>
+    
+    </fieldset>
     
     <fieldset> 
         <legend> Reinforcement Learning Projects </legend>
@@ -75,8 +83,7 @@
               <source src="./Lunar_Lander.mp4" type="video/mp4">
             </video>
         </div>
-        <p> I implemented a PPO-based reinforcement learning agent in PyTorch to solve the LunarLanderContinuous-v3 environment with continuous control. By tuning key hyperparameters—especially the value optimizer learning rate—I improved training stability and performance, with the best model achieving an average return of about 260 over 100 consecutive evaluation runs. The learned policy consistently exceeded the 200-point success threshold and demonstrated stable, reliable landings with minimal performance degradation across episodes. </p>
-        
+        <p> I implemented a PPO-based reinforcement learning agent in PyTorch to solve the LunarLanderContinuous-v3 environment with continuous control. By tuning key hyperparameters—especially the value optimizer learning rate—I improved training stability and performance, with the best model achieving an average return of about 260 over 100 consecutive evaluation runs. The learned policy consistently exceeded the 200-point success threshold and demonstrated stable, reliable landings with minimal performance degradation across episodes. </p>  
     </fieldset>
 
 
@@ -117,6 +124,7 @@
    </style>
 </body>
 </html>
+
 
 
 

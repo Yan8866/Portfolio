@@ -69,3 +69,11 @@ legend {
     background-color:#24527a;
     border-radius: 15px; 
 }
+
+.project-title {
+    text-align: center;
+    color:#478CCF;
+    margin-bottom: 5px;
+}
+
+

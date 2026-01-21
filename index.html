@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./resume.css" /> 
+</head>
+<body>
+    <img src="profile_pic.jpeg" alt="Profile Photo" class="profile-pic"> 
+    <h1>Yan Cheng </h1>
+
+    <!-- CONTACT SECTION -->
+    <div id="contacts">
+        <h2 style="color:#24527a;">CONTACT</h2>
+        <div class="span-line">
+            <span>Email: chengyan0627@gmail.com</span>
+            <span>Phone: (803) 414-3160</span>
+            <span>Location: Los Angeles, CA</span>
+        </div>
+    </div>
+
+    <!-- Education SECTION -->
+    <fieldset> 
+        <legend> Education </legend>
+        <p style="font-size: 20px;"> Master of Computer Science, Georgia Institute of Technology, Jan 2024 – May 2026, GPA 3.85 </p>
+        <p style="font-size: 20px;"> Master of Statistics, Texas A&M University, Jan 2021 - Aug 2022, GPA 3.82 </p>
+    </fieldset> 
+
+    <fieldset> 
+        <legend> Certificates </legend>
+            <p style="font-size: 20px;"> AWS Certified Cloud Practitioner; </p>
+            <p style="font-size: 20px;"> Tableau Desktop Specialist Certification.  </p>
+    </fieldset> 
+
+    <fieldset> 
+        <legend> Work Experience </legend>
+        <h3> Data Scientist at Altera Digital Health, Nov 2022 – Mar 2025 </h3>
+            <p> Automated ETL pipelines using Microsoft SSIS, reducing time costs by 70–90%, labor costs by 60–80%, and error rates by 80–95%. </p>
+            <p> Collaborated with clients to collect, clean, verify, and transform data, ensuring accuracy and reliability across relational databases using SQL.  </p>
+            <p> Partnered with SMEs and business users to design Tableau dashboards and reports that deliver real-time analytics and support data-driven decision-making.</p>
+        </fieldset> 
+   
+    <div id = note> <p> Note: Please click the projects to view more details. </p> </div>
+
+    <fieldset>  
+        <legend> Projects </legend>
+        <a class = link href = "./Trading_Strategy_Evaluation/Stock Trading Strategy Evaluation.pdf"> Trading Strategy Evaluation (Python) </a>
+        <p> This project evaluates stock trading strategies using three technical indicators: B%, PPO, and Stochastic Oscillator. Manual Strategy and Strategy Learner based on Random Forest classification are compared against a benchmark using in-sample and out-of-sample data. Results show that while both strategies outperform the benchmark in-sample, the Manual Strategy continues to perform well out-of-sample, whereas the Strategy Learner struggles with unseen data and is negatively impacted by trading costs.</p>
+
+        <div> 
+            <a class = link href = "./Churn_Diabetes_Prediction/Churn and Diabetes Prediction.pdf"> Churn and Diabetes Prediction using KNN, ANN and SVM (Python)   </a>
+        </div> 
+        <p> This project compares their performances and examines the impact of data dimensionality and size. Results show that ANN performs best overall with moderate computational cost, SVM is effective but computationally expensive, and KNN struggles due to the curse of dimensionality, challenging the assumption that larger datasets always lead to better model performance.  </p>
+
+        <div> 
+            <a class = link href = "./Dimension_Reduction_Clustering/Dimension Reduction And Clustering.pdf"> Dimension Reduction and Clustering (Python)  </a>
+        </div> 
+        <p> This project evaluates how PCA, ICA, RP, t-SNE and K-Means, GMM impact classification performance on churn and diabetes datasets. It also analyzes clustering quality, and tests whether reduced datasets or extracted cluster features improve ANN performance.   </p>
+        
+        <div> 
+            <a class = link href = "./Database And User Interface/"> Database And User Interface (SQL, PHP, HTML, CSS)  </a>
+        </div> 
+        <p> Design database schema with SQL, and build a user interface to generate reports using data stored in the database.  </p>
+
+        <div> 
+            <a class = link href = "./Convolutional Neural Network/"> Convolutional Neural Networks (Python)  </a>
+        </div> 
+        <p> Designed my own CNN for an image classification task. It achieved 91% accuracy on CIFAR data. </p>
+
+        <div> 
+            <a class = link href = "./Lung Cancer Prediction/Lung Cancer Data Analysis.pdf">  Lung Cancer Data Analysis (R)  </a>
+        </div> 
+        <p> Compared four machine learning models and then selected the model with the best interpretability and prediction power- Logistic Regression to predict how likely a person will develop lung cancer with certain features.  </p>
+        
+        <a class = link href = "./Analysis of Stock Market Indices/Analysis of Stock Market Indices.pdf"> 
+            Volatility Analysis of the Returns of S&P500 (R) 
+        </a>
+        <p> Built ARCH (1) and GARCH (1, 1) models to analyze the volatility of the returns of S&P500, and predicted the volatility of returns. </p>
+    </fieldset> <br>
+    <div style="text-align:center"> 
+        <a href="https://github.com/Yan8866/Portfolio.git" class="code"> View Code </a> 
+    </div><br>
+
+    <fieldset> 
+        <legend> Nature Language Processing Projects </legend>
+        <div> 
+            <a class = link href = "http://52.9.85.51:8080"> Document Summarizer-SUMA  </a>
+        </div> 
+        <p> SUMA is an AI-powered document summarization and question-answering web app using Gradio and the OpenAI API. The app allows users to upload .pdf, .txt, or .docx files and get concise summaries or intelligent answers. It is deployed on an AWS EC2 instance. The OpenAI API key is securely stored in AWS Secrets Manager and an IAM Role is configured for the EC2 instance to access it safely. The environment setup is automated. The app is lunched via systemd for 24/7 uptime. The service is open to the public through EC2’s Elastic IP.   </p>
+    </fieldset>
+
+    <fieldset> 
+        <legend> Computer Vision Projects </legend>
+        <h3 class="project-title">Kalman Filter Tracking</h3>
+        <div style="text-align: center;">
+            <video width="500" controls>
+              <source src="./kalman_tracking.mp4" type="video/mp4">
+            </video>
+        </div>
+        <p> I implemented a constant-velocity Kalman Filter that predicts and corrects object positions using noisy template-matching measurements, producing smoothed estimates of each target’s center. For multi-object tracking, I instantiated one independent Kalman Filter per person, each initialized at its own bounding-box center and updated separately using its own template and measurement stream. The tracking loop activates and deactivates filters based on each target’s start and end frame, allowing all trackers to run simultaneously and maintain stable position estimates even when measurements become noisy or intermittent. </p> 
+        
+        <h3 class="project-title">Particle Filter Tracking</h3>
+        <div style="text-align: center;">
+            <video width="500" controls>
+              <source src="./particle_tracking.mp4" type="video/mp4">
+            </video>
+        </div>
+        <p>  I implemented a particle filter that represents each object’s position using a cloud of weighted particles, which are predicted with Gaussian motion noise and then reweighted based on how well their local image patch matches the template. After normalizing weights, I resample particles to focus the distribution around high-likelihood regions and compute a weighted mean and spread to estimate and visualize the object’s position. Using this filter inside a multi-object tracking loop, each target is tracked independently by its own particle distribution, allowing robust tracking even under noise, partial occlusion, and rapid motion. </p>
+    
+    
+    </fieldset>
+
+    <fieldset> 
+        <legend> Reinforcement Learning Projects</legend>
+        <div style="text-align: center;">
+            <video width="500" controls>
+              <source src="./Lunar_Lander.mp4" type="video/mp4">
+            </video>
+        </div>
+        <p> I implemented a PPO-based reinforcement learning agent in PyTorch to solve the LunarLanderContinuous-v3 environment with continuous control. By tuning key hyperparameters—especially the value optimizer learning rate—I improved training stability and performance, with the best model achieving an average return of about 260 over 100 consecutive evaluation runs. The learned policy consistently exceeded the 200-point success threshold and demonstrated stable, reliable landings with minimal performance degradation across episodes. </p>
+        
+    </fieldset>
+
+
+    <fieldset> 
+        <legend> Technical Skills </legend>
+        <div class="listcontainer">
+            <ul class="listelement"> 
+                <li> ML: Skilled in linear regression, logistic regression, KNN, SVM, decision tree, clustering, dimension reduction and other ensemble learning techniques for classification and prediction. </li>
+                <li> Deep Learning: Fine tuning deep neural network models such as VGG, ResNet and Inception for image classification, object detection, and semantic segmentation tasks. </li>
+                <li> NLP: Develop RNN, GRU, LSTM and transformers for text classification and generation, word embeddings, sentiment analysis, sequence labeling and semantic similarity. </li>
+                <li> Generative AI: Training, tuning, and evaluating generative AI models such as GAN, VAE and diffusion for high-quality sample generation and representation learning.  </li>
+                <li> LLM: Developing skills in LangChain and HuggingFace by implementing small-scale LLM prototypes and exploring RAG, prompt workflows, and model evaluation techniques. </li>
+                <li> Reinforcement Learning: build complete RL systems, including value-based, policy-based and  actor critic methods, and advanced algorithms like PPO, MAPPO, TD3. </li>
+                <li> Computer Vision: Skilled in a full range of classical CV tasks including image filtering, edge and feature detection, frequency-domain analysis, motion estimation and object tracking. </li>
+                <li> Cloud Computing: Familiar with core AWS services including EC2, IAM roles, VPC networking, S3 storage, and Secrets Manager for secure, scalable ML application deployment. </li>
+                <li> Version Control & Collaboration: Proficient with Git and GitHub for code management, branching workflows, and collaborative development. </li>
+                <li> Big Data & Distributed Computing: Hands-on experience with Hadoop and Apache Spark for large-scale data processing and building distributed data pipelines. </li>
+                <li> Containerization & Reproducibility: Use Docker to containerize ML environments, ensure reproducible experiments, and streamline deployment.</li>
+                <li> Database & Full-stack Development: Design databases and build interactive interfaces using SQL, PHP, HTML, and CSS for ML-driven applications.</li>
+                <li> Data Analysis & Visualization: Skilled in transforming and analyzing spatial, time-series, and categorical datasets and creating interactive dashboards using Tableau Desktop. </li>
+            </ul>
+        </div>
+    </fieldset>
+
+    <div style="text-align:center"> 
+        <!-- <a href="./public/contact.html" class="button"> More Projects </a> <br /> -->
+        <footer>
+            <p>Yan Cheng @ 2025. All rights reserved. </p>
+        </footer>
+    </div> 
+
+    <style>
+    html,body { height:100%; margin:0; }
+    body{
+        min-height:100vh;
+        background: url("background3.jpg") center/cover no-repeat fixed; /* parallax-ish */
+    }
+   </style>
+</body>
+</html>

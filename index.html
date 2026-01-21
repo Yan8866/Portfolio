@@ -60,6 +60,7 @@
 
     <fieldset> 
         <legend> Computer Vision Projects </legend>
+        <h3 style="text-align:center; margin-bottom:5px;">Kalman Filter Tracking</h3>
         <div style="text-align: center;">
             <video width="500" controls>
               <source src="./kalman_tracking.mp4" type="video/mp4">
@@ -67,6 +68,7 @@
         </div>
         <p> I implemented a constant-velocity Kalman Filter that predicts and corrects object positions using noisy template-matching measurements, producing smoothed estimates of each target’s center. For multi-object tracking, I instantiated one independent Kalman Filter per person, each initialized at its own bounding-box center and updated separately using its own template and measurement stream. The tracking loop activates and deactivates filters based on each target’s start and end frame, allowing all trackers to run simultaneously and maintain stable position estimates even when measurements become noisy or intermittent. </p>
 
+        <h3 style="text-align:center; margin-top:25px; margin-bottom:5px;">Particle Filter Tracking</h3>
         <div style="text-align: center;">
             <video width="500" controls>
               <source src="./particle_tracking.mp4" type="video/mp4">
@@ -124,6 +126,7 @@
    </style>
 </body>
 </html>
+
 
 
 
